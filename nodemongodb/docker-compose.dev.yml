@@ -1,0 +1,12 @@
+services:
+  api:
+    extends:
+      file: docker-compose.yml
+      service: api
+    volumes:
+      # Monta tu carpeta local hacia /app en el contenedor
+      - ./:/app
+      # Evita sobreescribir los node_modules del contenedor
+      - /app/node_modules 
+    # Sobreescribe el comando de producción para usar hot reload
+    command: nodemon index.js

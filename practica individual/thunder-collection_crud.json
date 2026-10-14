@@ -1,0 +1,70 @@
+{
+  "clientName": "Thunder Client",
+  "collectionName": "Practica 1 - CRUD Docker",
+  "collectionId": "crud-docker-p1",
+  "dateExported": "2026-10-13",
+  "version": "1.2",
+  "folders": [],
+  "requests": [
+    {
+      "_id": "req-1-check",
+      "colId": "crud-docker-p1",
+      "containerId": "",
+      "name": "1. Verificar API y Hot Reload",
+      "url": "http://localhost:3010/",
+      "method": "GET",
+      "sortNum": 10000,
+      "headers": []
+    },
+    {
+      "_id": "req-2-create",
+      "colId": "crud-docker-p1",
+      "containerId": "",
+      "name": "2. Crear Item (POST)",
+      "url": "http://localhost:3010/items",
+      "method": "POST",
+      "sortNum": 20000,
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nombre\": \"Laptop Dell\",\n  \"descripcion\": \"Core i7 16GB RAM\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "req-3-get-all",
+      "colId": "crud-docker-p1",
+      "containerId": "",
+      "name": "3. Listar Todos los Items (GET)",
+      "url": "http://localhost:3010/items",
+      "method": "GET",
+      "sortNum": 30000,
+      "headers": []
+    },
+    {
+      "_id": "req-4-update",
+      "colId": "crud-docker-p1",
+      "containerId": "",
+      "name": "4. Actualizar Item por ID (PUT)",
+      "url": "http://localhost:3010/items/PEGA_EL_ID_AQUI",
+      "method": "PUT",
+      "sortNum": 40000,
+      "headers": [],
+      "body": {
+        "type": "json",
+        "raw": "{\n  \"nombre\": \"Laptop Dell G15\",\n  \"descripcion\": \"Actualizado con 32GB RAM y RTX 4060\"\n}",
+        "form": []
+      }
+    },
+    {
+      "_id": "req-5-delete",
+      "colId": "crud-docker-p1",
+      "containerId": "",
+      "name": "5. Eliminar Item por ID (DELETE)",
+      "url": "http://localhost:3010/items/PEGA_EL_ID_AQUI",
+      "method": "DELETE",
+      "sortNum": 50000,
+      "headers": []
+    }
+  ]
+}
